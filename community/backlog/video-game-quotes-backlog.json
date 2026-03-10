@@ -1057,7 +1057,7 @@
     "character": "Giorno Giovanna",
     "id": 106,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "japanese": "仲間を信じろ",
@@ -1076,7 +1076,7 @@
     "game": "Kingdom Hearts series (JP dub)",
     "character": "Sora",
     "id": 108,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
