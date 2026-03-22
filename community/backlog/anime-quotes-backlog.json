@@ -519,7 +519,7 @@
     "anime": "Dragon Ball Z",
     "character": "Son Goku",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 53,
