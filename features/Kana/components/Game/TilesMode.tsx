@@ -22,7 +22,7 @@ import {
   BottomBarState,
   gameContentVariants,
   useTilesModeActionKey,
-} from '@/shared/components/Game/tilesModeShared';
+} from '@/shared/components/Game/TilesModeShared';
 import TilesModeGrid from '@/shared/components/Game/TilesModeGrid';
 import useClassicSessionStore from '@/shared/store/useClassicSessionStore';
 

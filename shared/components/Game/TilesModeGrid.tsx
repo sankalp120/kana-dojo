@@ -9,7 +9,7 @@ import {
   BlankTile,
   tileContainerVariants,
   tileEntryVariants,
-} from '@/shared/components/Game/tilesModeShared';
+} from '@/shared/components/Game/TilesModeShared';
 import {
   celebrationBounceVariants,
   celebrationContainerVariants,
@@ -29,6 +29,7 @@ const ExplodingAnswerTile = memo(
     tileLang,
     celebrationToken,
     isCelebrating,
+    explodeDelayMs,
   }: {
     id: number;
     char: string;
@@ -38,6 +39,7 @@ const ExplodingAnswerTile = memo(
     tileLang?: string;
     celebrationToken: string;
     isCelebrating: boolean;
+    explodeDelayMs: number;
   }) => {
     const [animState, setAnimState] = useState<AnimState>('idle');
     const isAnimating = useRef(false);
@@ -70,24 +72,28 @@ const ExplodingAnswerTile = memo(
       if (!celebrationToken.endsWith('-true')) return;
       if (isAnimating.current) return;
       isAnimating.current = true;
-      setAnimState('exploding');
       timersRef.current.push(
         window.setTimeout(() => {
-          setAnimState('hidden');
+          setAnimState('exploding');
           timersRef.current.push(
             window.setTimeout(() => {
-              setAnimState('fading-in');
+              setAnimState('hidden');
               timersRef.current.push(
                 window.setTimeout(() => {
-                  setAnimState('idle');
-                  isAnimating.current = false;
-                }, 500),
+                  setAnimState('fading-in');
+                  timersRef.current.push(
+                    window.setTimeout(() => {
+                      setAnimState('idle');
+                      isAnimating.current = false;
+                    }, 500),
+                  );
+                }, 1500),
               );
-            }, 1500),
+            }, 300),
           );
-        }, 300),
+        }, explodeDelayMs),
       );
-    }, [celebrationToken]);
+    }, [celebrationToken, explodeDelayMs]);
 
     const getAnimationStyle = (): React.CSSProperties => {
       switch (animState) {
@@ -221,6 +227,7 @@ const TilesModeGrid = ({
                   tileLang={tileLang}
                   celebrationToken={`${tilesWrapperKey ?? 'tiles'}-${index}-${isCelebrating}`}
                   isCelebrating={isCelebrating}
+                  explodeDelayMs={index * 140}
                 />
               ) : (
                 <ActiveTile

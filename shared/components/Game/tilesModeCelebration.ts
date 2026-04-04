@@ -47,11 +47,11 @@ export const explosionKeyframes = `
     opacity: 1;
   }
   50% {
-    transform: scale(2.4);
+    transform: scale(1.5);
     opacity: 0.5;
   }
   100% {
-    transform: scale(4);
+    transform: scale(2);
     opacity: 0;
   }
 }
