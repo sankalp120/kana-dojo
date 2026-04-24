@@ -52,8 +52,8 @@ type LevelSetCardsProps<TLevel extends string, TItem> = {
 
 const INITIAL_ROWS = 5;
 const ROWS_PER_LOAD = 5;
-const LEVEL_SET_SELECTED_FLOAT_CLASSES =
-  'motion-safe:animate-float [--float-distance:-3px] delay-1000ms';
+const LEVEL_SET_SELECTED_FLOAT_CLASSES = '';
+  // 'motion-safe:animate-float [--float-distance:-3px] delay-1000ms';
 
 const LevelSetCards = <TLevel extends string, TItem>({
   levelOrder,

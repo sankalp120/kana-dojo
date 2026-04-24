@@ -14,8 +14,8 @@ import ModeSetupMenu from '@/shared/ui-composite/Menu/ModeSetupMenu';
 import { cn } from '@/shared/utils/utils';
 import { useScrollVisibility } from '@/shared/hooks/generic/useScrollVisibility';
 
-const TRAINING_ACTION_CLASSIC_FLOAT_CLASSES =
-  'motion-safe:animate-float [--float-distance:-3px] delay-200ms';
+const TRAINING_ACTION_CLASSIC_FLOAT_CLASSES = '';
+  // 'motion-safe:animate-float [--float-distance:-3px] delay-200ms';
 const ACTIVATION_SCROLL_DELAY_MS = 180;
 const ACTIVATION_SCROLL_DELTA_PX = 6;
 

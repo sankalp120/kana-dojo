@@ -59,6 +59,18 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
     return `${desktopClass} ${mobileClass}`;
   };
 
+  const renderSeparatedText = (items: string[], separatorClassName: string) =>
+    items.map((item, index) => (
+      <span key={`${item}-${index}`}>
+        {item}
+        {index < items.length - 1 && (
+          <span aria-hidden='true' className={separatorClassName}>
+            ・
+          </span>
+        )}
+      </span>
+    ));
+
   return (
     <fieldset className='flex flex-col items-start gap-1'>
       {kanaGroups.map((group, i) => {
@@ -71,11 +83,9 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
               className={clsx(
                 'flex w-full flex-row items-center gap-2',
                 'transition-all duration-200 ease-in-out',
-                isFocused
-                  ? 'text-(--main-color)'
-                  : 'text-(--secondary-color)',
+                isFocused ? 'text-(--main-color)' : 'text-(--secondary-color)',
                 'md:hover:text-(--main-color)',
-                'max-md:active:text-(--main-color) max-md:focus-within:text-(--main-color)',
+                'max-md:focus-within:text-(--main-color) max-md:active:text-(--main-color)',
               )}
               onClick={playClick}
             >
@@ -101,10 +111,10 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
                     getTextOpacity(isFocused, true),
                   )}
                 >
-                  {group.kana.join('・')}
+                  {renderSeparatedText(group.kana, 'text-(--border-color)')}
                 </span>
 
-                {/* Romanji */}
+                {/* Romaji */}
                 <span
                   className={clsx(
                     'col-start-1 row-start-1 transition-all duration-200',
@@ -112,7 +122,7 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
                     getTextOpacity(isFocused, false),
                   )}
                 >
-                  {group.romanji.join('・')}
+                  {renderSeparatedText(group.romanji, 'text-(--border-color)')}
                 </span>
               </div>
             </label>
@@ -144,4 +154,3 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
 };
 
 export default Subset;
-

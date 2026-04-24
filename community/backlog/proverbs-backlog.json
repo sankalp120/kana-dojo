@@ -6,7 +6,7 @@
     "english": "One stone, two birds",
     "meaning": "Accomplishing two things with one action",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 2,
@@ -50,7 +50,7 @@
     "romaji": "Nou aru taka wa tsume wo kakusu",
     "english": "The talented hawk hides its talons",
     "meaning": "Truly skilled people don't show off their abilities",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -69,7 +69,7 @@
     "english": "If in a hurry, go around",
     "meaning": "Taking the safer, longer route is sometimes faster",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 9,
@@ -132,7 +132,7 @@
     "english": "Three people together have the wisdom of Monju",
     "meaning": "Two heads are better than one",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 16,
@@ -150,7 +150,7 @@
     "english": "Giving birth is easier than worrying",
     "meaning": "Things are often easier done than worried about",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "english": "If fish has heart, water has heart",
     "meaning": "Good intentions will be reciprocated",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 19,
@@ -258,7 +258,7 @@
     "english": "One time, one meeting",
     "meaning": "Treasure every encounter, for it will never recur",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 30,
@@ -267,7 +267,7 @@
     "english": "Ten people, ten colors",
     "meaning": "Different strokes for different folks",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 31,
@@ -339,7 +339,7 @@
     "english": "Not knowing is Buddha",
     "meaning": "Ignorance is bliss",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 39,
@@ -375,7 +375,7 @@
     "english": "Fame from a mistake",
     "meaning": "A lucky break that comes from an error",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 44,
@@ -402,7 +402,7 @@
     "english": "Tap a stone bridge before crossing",
     "meaning": "Be very cautious",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 46,
@@ -411,7 +411,7 @@
     "english": "Even if you fall, don't get up empty-handed",
     "meaning": "Learn something from every setback",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 47,
@@ -438,7 +438,7 @@
     "english": "Early rising is worth three coins",
     "meaning": "Good things come from getting up early",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 50,
@@ -501,7 +501,7 @@
     "english": "A rice cake falls from the shelf",
     "meaning": "A windfall; unexpected good luck",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 57,
@@ -537,7 +537,7 @@
     "english": "Among flowers, the cherry blossom; among men, the warrior",
     "meaning": "The best of each kind",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 61,
@@ -555,7 +555,7 @@
     "english": "It's darkest under the lighthouse",
     "meaning": "The obvious is often overlooked",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 63,
@@ -645,7 +645,7 @@
     "english": "Water on a hot stone",
     "meaning": "A futile effort with little effect",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 73,
@@ -672,7 +672,7 @@
     "english": "Three years on a stone",
     "meaning": "Perseverance will be rewarded",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 76,
@@ -699,7 +699,7 @@
     "english": "Hurry to do good",
     "meaning": "If it's worth doing, do it at once",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 79,
@@ -744,7 +744,7 @@
     "english": "Dried bonito to a cat",
     "meaning": "Leave temptation unattended at your own risk",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 84,
@@ -788,7 +788,7 @@
     "romaji": "Nai sode wa furenu",
     "english": "You can't shake a sleeve you don't have",
     "meaning": "You can't give what you don't have",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -816,7 +816,7 @@
     "english": "After the rain, the ground hardens",
     "meaning": "Hard times make relationships stronger",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 92,
@@ -825,7 +825,7 @@
     "english": "A rolling stone gathers no moss",
     "meaning": "Constant change prevents stagnation",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 93,
@@ -861,7 +861,7 @@
     "english": "A frog in a well does not know the great sea",
     "meaning": "Limited experience limits perspective",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 97,
@@ -870,7 +870,7 @@
     "english": "Even monkeys fall from trees",
     "meaning": "Experts also make mistakes",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 98,
@@ -879,7 +879,7 @@
     "english": "A rice cake falls from the shelf",
     "meaning": "Unexpected good luck",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 99,
@@ -951,7 +951,9 @@
     "english": "Hurry to do good",
     "meaning": "Do worthwhile things promptly",
     "completed": false,
-    "issued": false
+    "issued": false,
+    "completedBy": "som002",
+    "completedPR": 14267
   },
   {
     "id": 107,
@@ -1032,7 +1034,7 @@
     "english": "Wind in the willow",
     "meaning": "Stay flexible and let problems pass",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 116,
@@ -1068,7 +1070,7 @@
     "english": "One who chases two rabbits catches neither",
     "meaning": "Focus on one thing at a time",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 120,
@@ -1122,7 +1124,7 @@
     "english": "A bee on a crying face",
     "meaning": "Misfortune never comes alone",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 126,
@@ -1140,7 +1142,7 @@
     "english": "Watch others and correct yourself",
     "meaning": "Learn from others' behavior",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 128,
@@ -1166,7 +1168,7 @@
     "romaji": "Zenin zenka",
     "english": "Good causes bring good results",
     "meaning": "Good deeds lead to good outcomes",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1176,7 +1178,7 @@
     "english": "Three years on a stone",
     "meaning": "Perseverance brings results",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 132,
@@ -1212,7 +1214,7 @@
     "english": "The mouth is the source of misfortune",
     "meaning": "Careless words cause trouble",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 136,
@@ -1275,7 +1277,7 @@
     "english": "Not knowing is Buddha",
     "meaning": "Ignorance is bliss",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 143,
@@ -1293,7 +1295,7 @@
     "english": "A frog's child is a frog",
     "meaning": "Children resemble their parents",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 145,
@@ -1311,7 +1313,7 @@
     "english": "If fish has heart, water has heart",
     "meaning": "Good intentions are reciprocated",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 147,
@@ -1394,7 +1396,7 @@
     "english": "A skilled hawk hides its talons",
     "meaning": "True skill is modest",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 156,
@@ -1412,7 +1414,7 @@
     "english": "Spilled water doesn’t return to the tray",
     "meaning": "What’s done is done",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 158,
@@ -1439,7 +1441,7 @@
     "english": "Tap a stone bridge before crossing",
     "meaning": "Be very cautious",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 161,
@@ -1448,7 +1450,7 @@
     "english": "An inch ahead is darkness",
     "meaning": "The future is uncertain",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 162,
@@ -1493,7 +1495,7 @@
     "english": "Even a packhorse driver looks good in fine clothes",
     "meaning": "Clothes make the person",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 167,
@@ -1511,7 +1513,7 @@
     "english": "A frog in a well doesn’t know the ocean",
     "meaning": "Limited experience limits perspective",
     "completed": false,
-    "issued": false
+    "issued": true
   },
   {
     "id": 169,
@@ -1619,6 +1621,6 @@
     "english": "Even a walking dog will hit a stick",
     "meaning": "Acting can lead to luck or trouble",
     "completed": false,
-    "issued": false
+    "issued": true
   }
 ]

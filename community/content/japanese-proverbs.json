@@ -556,5 +556,35 @@
   "romaji": "Zenin zenka",
   "english": "Good causes bring good results",
   "meaning": "Good deeds lead to good outcomes"
+   },
+  {
+    "japanese": "良薬は口に苦し",
+    "romaji": "Ryouyaku wa kuchi ni nigashi",
+    "english": "Good medicine tastes bitter",
+    "meaning": "Helpful advice often sounds harsh"
+  },
+  {
+  "japanese": "蛙の子は蛙",
+  "romaji": "Kaeru no ko wa kaeru",
+  "english": "A frog's child is a frog",
+  "meaning": "Children resemble their parents"
+  },
+  {
+  "japanese": "馬子にも衣装",
+  "romaji": "Mago ni mo ishou",
+  "english": "Even a packhorse driver looks good in fine clothes",
+  "meaning": "Clothes make the person"
+  },
+  {
+  "japanese": "人のふり見て我がふり直せ",
+  "romaji": "Hito no furi mite waga furi naose",
+  "english": "Watch others and correct yourself",
+  "meaning": "Learn from others' behavior"
+  },
+  {
+  "japanese": "善は急げ",
+  "romaji": "Zen wa isoge",
+  "english": "Hurry to do good",
+  "meaning": "Do worthwhile things promptly"
   }
 ]

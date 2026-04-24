@@ -1,12 +1,6 @@
 'use client';
 import React, { ReactNode, useEffect, useState } from 'react';
-import {
-  CircleCheck,
-  CircleX,
-  CircleArrowRight,
-  RotateCcw,
-  Flag,
-} from 'lucide-react';
+import { CircleCheck, RotateCcw, Flag } from 'lucide-react';
 import clsx from 'clsx';
 import { ActionButton } from '@/shared/ui/components/ActionButton';
 import { useClick } from '@/shared/hooks/generic/useAudio';
@@ -99,8 +93,8 @@ export const GameBottomBar = ({
               : 'pointer-events-none -translate-x-4 opacity-0 sm:-translate-x-8',
           )}
         >
-          {isCorrect && (
-            USE_NEW_CHECK_ICON ? (
+          {isCorrect &&
+            (USE_NEW_CHECK_ICON ? (
               <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-(--main-color) bg-(--main-color) sm:h-12 sm:w-12'>
                 <svg
                   className='h-6 w-6 text-(--background-color) sm:h-8 sm:w-8'
@@ -118,10 +112,23 @@ export const GameBottomBar = ({
               </div>
             ) : (
               <CircleCheck className='h-10 w-10 text-(--main-color) sm:h-12 sm:w-12' />
-            )
-          )}
+            ))}
           {isWrong && (
-            <CircleX className='h-10 w-10 text-(--main-color) sm:h-12 sm:w-12' />
+            <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-(--main-color) bg-(--main-color) sm:h-12 sm:w-12'>
+              <svg
+                className='h-6 w-6 text-(--background-color) sm:h-8 sm:w-8'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={3}
+                  d='M6 6l12 12M18 6L6 18'
+                />
+              </svg>
+            </div>
           )}
           <p className='flex flex-col'>
             <span className='text-lg text-(--secondary-color) sm:text-xl'>
@@ -133,9 +140,9 @@ export const GameBottomBar = ({
           </p>
           <button
             onClick={() => {
-                        playClick();
-                        window.open('https://tally.so/r/2E4rB9', '_blank', 'noopener');
-                      }}
+              playClick();
+              window.open('https://tally.so/r/2E4rB9', '_blank', 'noopener');
+            }}
             className='max-sm:hidden'
           >
             <Flag className='h-6 w-6 text-(--secondary-color) delay-0 hover:cursor-pointer hover:text-(--main-color)' />
@@ -177,7 +184,9 @@ export const GameBottomBar = ({
             onClick={onAction}
           >
             {showRetryButton ? (
-              <RotateCcw className='h-8 w-8' />
+              <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-(--background-color) bg-(--background-color)'>
+                <RotateCcw className='h-5 w-5 text-(--main-color)' />
+              </div>
             ) : showNextButton ? (
               USE_NEW_CHECK_ICON ? (
                 <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-(--background-color) bg-(--background-color)'>
@@ -196,7 +205,19 @@ export const GameBottomBar = ({
                   </svg>
                 </div>
               ) : (
-                <CircleArrowRight className='h-8 w-8' />
+                <svg
+                  className='h-5 w-5 text-(--main-color)'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M13 7l5 5m0 0l-5 5m5-5H6'
+                  />
+                </svg>
               )
             ) : USE_NEW_CHECK_ICON ? (
               <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-(--background-color) bg-(--background-color)'>
