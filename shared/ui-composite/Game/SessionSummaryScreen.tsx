@@ -269,15 +269,9 @@ function GauntletSummary({
   onNewSession,
 }: GauntletSessionSummaryProps) {
   const { playClick } = useClick();
-  const [showCharacterBreakdown, setShowCharacterBreakdown] = useState(false);
   const [previousBest, setPreviousBest] = useState<number | null>(null);
   const total = stats.correctAnswers + stats.wrongAnswers;
   const accuracy = total > 0 ? Math.round((stats.correctAnswers / total) * 100) : 0;
-  const breakdown = Object.entries(stats.characterStats)
-    .map(([char, data]) => ({
-      char,
-      correct: data.correct,
-      wrong: data.wrong,
       accuracy:
         data.correct + data.wrong > 0 ? data.correct / (data.correct + data.wrong) : 0,
     }))
@@ -345,45 +339,12 @@ function GauntletSummary({
               </span>
             </div>
             <div className='text-xl font-black tracking-tighter text-(--main-color) sm:text-2xl'>
-              {DIFFICULTY_CONFIG[stats.difficulty].icon} {DIFFICULTY_CONFIG[stats.difficulty].label} • {stats.gameMode}
+              {DIFFICULTY_CONFIG[stats.difficulty].label} • {stats.gameMode}
             </div>
             {(isNewBest || previousBest) && (
               <p className='mt-2 text-sm text-(--secondary-color) lowercase opacity-60'>
                 {isNewBest ? 'new personal best!' : `best: ${formatGauntletTime(previousBest!)}`}
               </p>
-            )}
-          </div>
-
-          <div className='flex flex-col rounded-[2rem] border-2 border-(--secondary-color)/10 bg-(--background-color) p-5 sm:p-6'>
-            <button
-              onClick={() => {
-                playClick();
-                setShowCharacterBreakdown(prev => !prev);
-              }}
-              className='mb-2 flex items-center gap-2 text-left'
-            >
-              <span
-                className={`${sessionStatIconBadgeStyle.base} ${sessionStatIconBadgeStyle.unselected}`}
-              >
-                <Heart className='h-5 w-5 fill-current' />
-              </span>
-              <span className='text-xs leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>
-                character breakdown
-              </span>
-            </button>
-            {showCharacterBreakdown ? (
-              <div className='max-h-44 space-y-2 overflow-y-auto'>
-                {breakdown.map(item => (
-                  <div key={item.char} className='flex items-center justify-between rounded-xl border border-(--border-color) p-2'>
-                    <span className='text-lg font-bold text-(--main-color)'>{item.char}</span>
-                    <span className='text-sm text-(--secondary-color)'>
-                      {item.correct}✓ {item.wrong}✗ {Math.round(item.accuracy * 100)}%
-                    </span>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className='text-sm text-(--secondary-color) lowercase opacity-60'>tap to view weakest characters first.</p>
             )}
           </div>
         </div>
@@ -447,7 +408,7 @@ function SummaryLayout({
 
   return (
     <div className='fixed inset-0 z-50 flex h-full w-full flex-col overflow-x-hidden overflow-y-auto bg-(--background-color)'>
-      <div className='mx-auto flex min-h-full w-full max-w-7xl flex-1 flex-col justify-start px-4 py-8 sm:min-h-[100dvh] sm:justify-center sm:px-8 sm:py-20 lg:px-12 lg:py-16'>
+      <div className='mx-auto flex w-full max-w-7xl flex-col px-4 py-8 pb-24 sm:px-8 sm:py-12 sm:pb-32 lg:px-12 lg:py-16 lg:pb-40'>
         <div className='mb-8 flex flex-col items-center gap-1 text-center select-none sm:mb-12 sm:items-start sm:text-left lg:mb-16'>
           <h1 className='text-3xl font-black tracking-tighter text-(--main-color) lowercase sm:text-5xl lg:text-6xl'>{title}</h1>
           <p className='text-base font-medium tracking-tight text-(--secondary-color) lowercase opacity-60 sm:text-xl'>{subtitle}</p>
@@ -502,7 +463,7 @@ function SummaryLayout({
             </div>
           </div>
 
-          <div className='grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6'>
+          <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4'>
             <MiniStat icon={<Trophy className='fill-current' />} label={firstStatLabel} value={firstStatValue} />
             <MiniStat icon={<Zap className='fill-current' />} label={secondStatLabel} value={secondStatValue} />
             <MiniStat icon={<Activity />} label={thirdStatLabel} value={thirdStatValue} />
@@ -549,9 +510,10 @@ function MiniStat({
         >
           {icon}
         </span>
-        <span className='text-xs leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>{label}</span>
+        <span className='text-[0.65rem] leading-tight font-bold tracking-widest text-(--secondary-color) uppercase opacity-60 sm:text-xs sm:leading-none'>{label}</span>
       </div>
       <div className='text-2xl font-black tracking-tighter text-(--main-color) sm:text-3xl'>{value}</div>
     </div>
   );
 }
+
