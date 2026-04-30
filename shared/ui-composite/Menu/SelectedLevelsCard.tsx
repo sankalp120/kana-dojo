@@ -4,6 +4,7 @@ import clsx from 'clsx';
 
 interface SelectedLevelsCardProps {
   currentDojo: string;
+  fullLabel?: string;
   compactLabel: string;
   useTildeSeparator?: boolean;
 }
@@ -33,10 +34,12 @@ const renderLabelWithSeparator = (label: string, useTildeSeparator: boolean) => 
 
 export function SelectedLevelsCard({
   currentDojo,
+  fullLabel,
   compactLabel,
   useTildeSeparator = USE_TILDE_SEPARATOR,
 }: SelectedLevelsCardProps) {
   const isKana = currentDojo === 'kana';
+  const label = fullLabel ?? compactLabel;
 
   return (
     <div className='rounded-xl bg-(--card-color) p-4'>
@@ -62,7 +65,7 @@ export function SelectedLevelsCard({
           </span>
         </div>
         <span className='text-sm break-words text-(--secondary-color)'>
-          {renderLabelWithSeparator(compactLabel, useTildeSeparator)}
+          {renderLabelWithSeparator(label, useTildeSeparator)}
         </span>
       </div>
     </div>
