@@ -229,7 +229,18 @@
     "difficulty": "medium",
     "answers": ["Mugicha", "Matcha", "Genmaicha", "Sencha"],
     "correctIndex": 0
-  }
+  },
+  {
+  "question": "Which of these is a Japanese traditional storytelling art?",
+  "difficulty": "medium",
+  "answers": [
+    "Rakugo",
+    "Kabuki",
+    "Noh",
+    "Ikebana"
+  ],
+  "correctIndex": 0
+}
 ]
 {
   "question": "Which season is associated with red maple leaves (momiji) in Japan? (Community variation 16)",
