@@ -56,7 +56,7 @@
     "game": "JoJo’s Bizarre Adventure: All-Star Battle",
     "character": "Giorno Giovanna",
     "id": 6,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -86,7 +86,7 @@
     "game": "Street Fighter series",
     "character": "Ryu",
     "id": 9,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -96,7 +96,7 @@
     "game": "Dragon Quest XI",
     "character": "Hero / party lines",
     "id": 10,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -116,7 +116,7 @@
     "game": "Pokemon series",
     "character": "Rival characters",
     "id": 12,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -136,7 +136,7 @@
     "game": "Yakuza: Like a Dragon",
     "character": "Ichiban Kasuga",
     "id": 14,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -166,7 +166,7 @@
     "game": "Persona 5 Strikers",
     "character": "Joker",
     "id": 17,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -236,7 +236,7 @@
     "game": "Steins;Gate: My Darling's Embrace",
     "character": "Rintaro Okabe",
     "id": 24,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -276,7 +276,7 @@
     "game": "Kingdom Hearts series (JP dub)",
     "character": "Sora",
     "id": 28,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -296,7 +296,7 @@
     "game": "Dragon Quest XI",
     "character": "Hero / party lines",
     "id": 30,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -396,7 +396,7 @@
     "game": "Samurai game proverb line",
     "character": "Musashi reference",
     "id": 40,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -416,7 +416,7 @@
     "game": "Fate/stay night [Realta Nua]",
     "character": "Saber",
     "id": 42,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -486,7 +486,7 @@
     "game": "Street Fighter series",
     "character": "Ryu",
     "id": 49,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -516,7 +516,7 @@
     "game": "Pokemon series",
     "character": "Rival characters",
     "id": 52,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -546,7 +546,7 @@
     "game": "Fire Emblem series",
     "character": "Various protagonists",
     "id": 55,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -556,8 +556,10 @@
     "game": "Onimusha series",
     "character": "Nobunaga Oda",
     "id": 56,
-    "issued": true,
-    "completed": false
+    "issued": false,
+    "completed": false,
+    "completedBy": "leeydev",
+    "completedPR": 15042
   },
   {
     "japanese": "世界を救うって、そういうことだろ？",
@@ -606,7 +608,7 @@
     "game": "The Prince of Tennis: Sweat & Tears 2",
     "character": "Ryoma Echizen",
     "id": 61,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -616,7 +618,7 @@
     "game": "Fate/stay night [Realta Nua]",
     "character": "Saber",
     "id": 62,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -646,7 +648,7 @@
     "game": "Danganronpa series",
     "character": "Makoto Naegi",
     "id": 65,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -716,7 +718,7 @@
     "game": "Pokemon series",
     "character": "Rival characters",
     "id": 72,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -736,7 +738,7 @@
     "game": "Yakuza: Like a Dragon",
     "character": "Ichiban Kasuga",
     "id": 74,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -866,7 +868,7 @@
     "game": "Dragon Quest series",
     "character": "Recurring command voice",
     "id": 87,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -986,7 +988,7 @@
     "game": "Tales series",
     "character": "Various endings",
     "id": 99,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -996,7 +998,7 @@
     "game": "Samurai game proverb line",
     "character": "Musashi reference",
     "id": 100,
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1076,7 +1078,7 @@
     "game": "Kingdom Hearts series (JP dub)",
     "character": "Sora",
     "id": 108,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1197,6 +1199,14 @@
     "character": "Musashi reference",
     "id": 120,
     "issued": true,
+    "completed": false
+  },
+  {
+    "id": 56,
+    "quote": "The cake is a lie",
+    "game": "Portal",
+    "character": "GLaDOS",
+    "issued": false,
     "completed": false
   }
 ]

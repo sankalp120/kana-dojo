@@ -116,8 +116,10 @@
     "season": "Spring",
     "kigo": "Frog (kaeru)",
     "notes": "Humorous encouragement and compassion in Issa's voice.",
-    "issued": true,
-    "completed": false
+    "issued": false,
+    "completed": false,
+    "completedBy": "enmanuelcanelon",
+    "completedPR": 15600
   },
   {
     "id": 11,

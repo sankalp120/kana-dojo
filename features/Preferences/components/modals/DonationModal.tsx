@@ -1,11 +1,11 @@
 'use client';
 
-import { ActionButton } from '@/shared/components/ui/ActionButton';
+import { ActionButton } from '@/shared/ui/components/ActionButton';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { Heart, X } from 'lucide-react';
 import { useCallback } from 'react';
 import { useClick } from '@/shared/hooks/generic/useAudio';
-import { cn } from '@/shared/lib/utils';
+import { cn } from '@/shared/utils/utils';
 
 interface DonationModalProps {
   open: boolean;
@@ -80,7 +80,7 @@ export default function DonationModal({
                 <p className='text-base leading-7'>
                   We appreciate you more than we can properly express, and thank
                   you again for being part of this project and for any support
-                  you can offer, in any form.
+                  you can offer.
                 </p>
               </div>
             </div>
@@ -94,13 +94,13 @@ export default function DonationModal({
                   borderBottomThickness={16}
                   asChild
                   className={cn(
-                    'motion-safe:animate-float px-5 py-4 text-lg font-semibold [--float-distance:-3.5px] [animation-delay:600ms] sm:w-auto',
+                    'motion-safe:animate-float px-5 py-4 text-lg font-semibold [--float-distance:-2.5px] [animation-delay:600ms] sm:w-auto',
                   )}
                 >
                   <a
                     href='https://ko-fi.com/kanadojo'
                     target='_blank'
-                    rel='noreferrer noopener'
+                    rel='noopener'
                     onClick={playClick}
                     className='inline-flex items-center gap-2'
                   >
@@ -136,3 +136,4 @@ export default function DonationModal({
     </DialogPrimitive.Root>
   );
 }
+

@@ -21,7 +21,9 @@
     "position": "bottom",
     "text": "Routine note: small non-blocking documentation edits may appear here.",
     "issued": true,
-    "completed": false
+    "completed": false,
+    "completedBy": "GulfamAfzal",
+    "completedPR": 15542
   },
   {
     "id": 4,
